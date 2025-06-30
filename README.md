@@ -1,37 +1,34 @@
 # ElevateLabs_Task5
-# SQL Developer Internship - Task 5: SQL Joins (Inner, Left, Right, Full)
+SQL Developer Internship - Task 5: SQL Joins (Inner, Left, Right, Full)
 
-## 📌 Objective
-Learn to combine data from multiple tables using:
-- INNER JOIN
-- LEFT JOIN
-- RIGHT JOIN
-- FULL OUTER JOIN
+📌 Objective
 
-## 📊 Tables Created
+Learn to combine data from multiple tables using INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN practically.
 
-**1️⃣ Customers**
+📂 Task Description
 
-| CustomerID | Name    | City       |
-|------------|---------|------------|
-| 1          | Alice   | Delhi      |
-| 2          | Bob     | Mumbai     |
-| 3          | Charlie | Bangalore  |
-| 4          | David   | Chennai    |
+Created two related tables (Customers and Orders) inside a single SQL file named joins_task.sql.
 
-**2️⃣ Orders**
+Demonstrated all four join types in one file for clarity and easy testing.
 
-| OrderID | CustomerID | Product      |
-|---------|------------|--------------|
-| 101     | 1          | Laptop       |
-| 102     | 2          | Phone        |
-| 103     | 1          | Keyboard     |
-| 104     | 5          | Mouse        |
+Verified outputs to understand differences between joins.
 
-## 🛠️ Queries Demonstrated
+🛠️ Technologies Used
 
-### INNER JOIN
-```sql
-SELECT Customers.Name, Orders.Product
-FROM Customers
-INNER JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
+DB Browser for SQLite / MySQL Workbench
+
+SQL
+
+🗂️ Files Included
+
+joins_task.sql – Contains table creation, data insertion, and SQL queries demonstrating INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN.
+
+README.md – This documentation.
+
+🧩 Learning Outcomes
+
+✅ Clear understanding of joins in SQL.✅ Ability to write and test join queries on local SQL environments.✅ Confidence in merging and analyzing relational data.
+
+⚡ How to Run
+
+1️⃣ Open your SQL tool (DB Browser for SQLite or MySQL Workbench).2️⃣ Execute joins_task.sql directly; it will create the tables, insert sample data, and run join queries for immediate learning.
